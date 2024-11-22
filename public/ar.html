@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>My A-Frame Scene</title>
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+	<script src="https://unpkg.com/aframe-charts-component/dist/aframe-charts-component.min.js"></script>
+</head>
+
+<body style='margin : 0px; overflow: hidden;'>
+	<!-- Aframe scene -->
+	<a-scene embedded arjs='sourceType: webcam;'>
+
+		<!-- position => 10(right) 0.5(front) -2(negative => up, positive => down) -->
+
+		<a-marker-camera preset='hiro'>
+			<!-- Avg Decade Temp Change Bar Graph Starts -->
+			<a-text value="Avg Decade Temp Change Bar Graph" position="-2 0.5 -2" rotation="-90 0 0"></a-text>
+			<a-entity charts="
+					type: bar; 
+					dataPoints: ./avg_decade_temp.json; 
+					axis_length: 7;
+					axis_visible: true;
+					show_legend_info: false;
+					show_legend_title: false;
+					show_legend_rotation: {x: -90, y:0, z:0};
+					show_legend_position: {x: -2, y: 0.5, z: -1}
+				" position="-1.5 0.5 -1" scale="0.1 0.1 0.1" rotation="-90 0 0">
+			</a-entity>
+
+			<!-- Avg Decade Temp Change Bar Graph Stops -->
+
+			<!-- Avg Monthly Temp change Pie Graph Start -->
+			<a-text value="Avg Monthly Temp Change Bar Graph" position="-2 0.5 0" rotation="-90 0 0"></a-text>
+			
+			<a-entity charts="type: pie; dataPoints: ./avg_monthly_temp.json; pie_radius: 3" position="-1 0.5 1.5" scale="0.3 0.3 0.3"></a-entity>
+			<!-- Avg monthly temp change pie graph ends -->
+		</a-marker-camera>
+		
+		<a-entity camera></a-entity>
+	</a-scene>
+</body>
+
+</html>
