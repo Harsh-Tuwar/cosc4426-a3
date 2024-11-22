@@ -104,7 +104,7 @@ const getMonthlyAvg = () => {
 		}
 	});
 
-	console.log(JSON.stringify(test));
+	// console.log(JSON.stringify(test));
 }
 
 export default { getAvgDecadeTemp, getMonthlyAvg };

@@ -11,9 +11,7 @@
 <body style='margin : 0px; overflow: hidden;'>
 	<!-- Aframe scene -->
 	<a-scene embedded arjs='sourceType: webcam;'>
-
 		<!-- position => 10(right) 0.5(front) -2(negative => up, positive => down) -->
-
 		<a-marker-camera preset='hiro'>
 			<!-- Avg Decade Temp Change Bar Graph Starts -->
 			<a-text value="Avg Decade Temp Change Bar Graph" position="-2 0.5 -2" rotation="-90 0 0"></a-text>
@@ -35,6 +33,44 @@
 			<a-text value="Avg Monthly Temp Change Bar Graph" position="-2 0.5 0" rotation="-90 0 0"></a-text>
 			
 			<a-entity charts="type: pie; dataPoints: ./avg_monthly_temp.json; pie_radius: 3" position="-1 0.5 1.5" scale="0.3 0.3 0.3"></a-entity>
+
+			<a-entity position="0 0.5 0.2" scale="0.4 0.4 0.4">
+				<a-box color="#008080" scale="0.3 0.3 0.3" position="1 0.5 0.5"></a-box>
+				<a-text value="January" rotation="-90 0 0" position="1.5 0.5 0.5"></a-text>
+
+				<a-box color="#FF00FF" scale="0.3 0.3 0.3" position="1 0.5 1"></a-box>
+				<a-text value="February" rotation="-90 0 0" position="1.5 0.5 1"></a-text>
+
+				<a-box color="#00FF00" scale="0.3 0.3 0.3" position="1 0.5 1.5"></a-box>
+				<a-text value="March" rotation="-90 0 0" position="1.5 0.5 1.5"></a-text>
+
+				<a-box color="#00FFFF" scale="0.3 0.3 0.3" position="1 0.5 2"></a-box>
+				<a-text value="April" rotation="-90 0 0" position="1.5 0.5 2"></a-text>
+
+				<a-box color="#99FF99" scale="0.3 0.3 0.3" position="1 0.5 2.5"></a-box>
+				<a-text value="May" rotation="-90 0 0" position="1.5 0.5 2.5"></a-text>
+
+				<a-box color="#FFFF00" scale="0.3 0.3 0.3" position="1 0.5 3"></a-box>
+				<a-text value="June" rotation="-90 0 0" position="1.5 0.5 3"></a-text>
+
+				<a-box color="#FF0000" scale="0.3 0.3 0.3" position="1 0.5 3.5"></a-box>
+				<a-text value="July" rotation="-90 0 0" position="1.5 0.5 3.5"></a-text>
+
+				<a-box color="#FF6600" scale="0.3 0.3 0.3" position="1 0.5 4"></a-box>
+				<a-text value="August" rotation="-90 0 0" position="1.5 0.5 4"></a-text>
+
+				<a-box color="#808000" scale="0.3 0.3 0.3" position="1 0.5 4.5"></a-box>
+				<a-text value="September" rotation="-90 0 0" position="1.5 0.5 4.5"></a-text>
+
+				<a-box color="#800000" scale="0.3 0.3 0.3" position="1 0.5 5"></a-box>
+				<a-text value="October" rotation="-90 0 0" position="1.5 0.5 5"></a-text>
+
+				<a-box color="#808080" scale="0.3 0.3 0.3" position="1 0.5 5.5"></a-box>
+				<a-text value="November" rotation="-90 0 0" position="1.5 0.5 5.5"></a-text>
+
+				<a-box color="#000080" scale="0.3 0.3 0.3" position="1 0.5 6"></a-box>
+				<a-text value="December" rotation="-90 0 0" position="1.5 0.5 6"></a-text>
+			</a-entity>
 			<!-- Avg monthly temp change pie graph ends -->
 		</a-marker-camera>
 		
