@@ -14,9 +14,9 @@ The first (bar) graph is about the average temperature of the decade.
 
 The second (pie) graph is to compare/show which month is the hottest and coldest through out the timeframe of 1880 to 2023.
 
-[HIRO](./assets//HIRO.jpg)
+![HIRO](./assets//HIRO.jpg)
 
 ### Screenshots
 
-[screenshot-1](./assets/ss-1.jpg)
+![screenshot-1](./assets/ss-1.jpg)
 
