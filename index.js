@@ -16,8 +16,12 @@ app.use(bodyParser.urlencoded({
 
 app.use(bodyParser.json());
 
+app.get("/", (req, res) => {
+	res.redirect("/ar/ar.html");
+});
+
 app.use("/ar", (req, res, next) => {
-	dataBuilder.getMonthlyAvg();
+	// dataBuilder.getMonthlyAvg();
 	next();
 }, express.static(path.join(__dirname, 'public')));
 

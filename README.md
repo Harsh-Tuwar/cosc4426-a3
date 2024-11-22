@@ -20,3 +20,26 @@ The second (pie) graph is to compare/show which month is the hottest and coldest
 
 ![screenshot-1](./assets/ss-1.jpg)
 
+### How to get started?
+
+Make sure you have NodeJS installed. 
+
+Open up the project and run below mentioned command in your terminal to install the dependencies.
+
+```sh
+npm install
+```
+
+Once the dependencies are installed, you can run the node server by running the below mentioned command.
+
+```sh
+npm run dev
+```
+
+This should start up your web app on `http://localhost:9001`. 
+
+Opening the app on `/` should redirect you to the `ar` page where aframe is enabled.
+
+## ⚠️ Caution
+
+Please dont push directly to the repo as it would auto-deploy changes. Rather, please submit a PR and someone from the team will review and merge your PR.
