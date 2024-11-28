@@ -1,0 +1,4 @@
+{
+	"bar": "The above graph shows the average temperatures for each decade starting from 1880 to 2020. It can be seen from the graph that the temperature has been increasing from last 6 decades starting from 1970 to 2020. There is a spike in the decade for 1940 to 1950 which shows the affects of use of the nuclear weapon during the world war 2.",
+	"pie": "The above graph shows the average temperature of each month through out the years of 1880 to 2023. In order to calculate the average temperature for each month, we've computed the sum of all temperatures of january month for all years and then divided it by the total number of years. It can be seen in the pie chart that December is the coolest month while May is the hottest avg month."
+}
